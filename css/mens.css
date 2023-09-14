@@ -1,0 +1,72 @@
+
+.womens-container{
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+.women-img {
+    width: 100%; /* グリッドの幅に合わせて画像を調整 */
+    max-width: 100%; /* 画像の最大幅を100%に設定 */
+    filter: brightness(120%);
+}
+
+.mens-text {
+    margin-left: 12%;
+    margin-right: 10%;
+    overflow: hidden;
+}
+
+.mens-text h2 {
+    font-weight: 600;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+.mens-text p {
+    font-size: 0.8em;
+    line-height: 1.5em;
+    color: rgb(37, 37, 37);
+}
+
+.clothes-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em;
+}
+
+.mens-1 {
+    width: 100%;
+}
+
+.name-heart{
+    width: 100%;
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name-heart p{
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.9em;
+}
+
+.text-price{
+    width: 100%;
+    margin-top: 0.6em;
+}
+
+.text-price p{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 0.9em;
+}
