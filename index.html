@@ -4,22 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOKYO VOGUE</title>
-    <link rel="stylesheet" href="index.css" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@900&family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900¥¥&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" >
+    <link rel="stylesheet" href="humburger.css">
 </head>
 <body>
-    <nav class="nav-container">
-       
-        <ul class="nav-list">
-            <li><a href="pages/mens.html">MENS</a></li>
-            <li><a href="pages/womens.html">WOMENS</a></li>
-            <li><a href="#">LAUNCHES</a></li>
-        </ul>
+    <header class="c-header c-hamburger-menu"><!-- 追記 クラスを追記 -->
         
-    
+        <input type="checkbox" name="hamburger" id="hamburger" class="c-hamburger-menu__input"/><!-- 追記 idはlabelのforと同じにする -->
+        <label for="hamburger" class="c-hamburger-menu__bg"></label><!-- 追記 ハンバーガーメニュを開いた時の背景 -->
+        <ul class="c-header__list c-hamburger-menu__list"><!-- 追記 クラスを追記 -->
+          <li class="c-header__list-item">
+          </li>
+          <li class="c-header__list-item">
+            <a href="#" class="c-header__list-link">MENS</a>
+          </li>
+          <li class="c-header__list-item">
+            <a href="#" class="c-header__list-link">WOMENS</a>
+          </li>
+          <li class="c-header__list-item">
+            <a href="#" class="c-header__list-link">LAUNCHES</a>
+          </li>
+        </ul>
         <div class="logo">
             <h2>TOKYO VOGUE</h2>
             <p>Your Urban Style Destination</p>
@@ -29,36 +38,13 @@
             <li><img src="imgs/favorite_FILL0_wght100_GRAD0_opsz24.png" class="" alt=""></li>
             <li><img src="imgs/shopping_bag_FILL0_wght100_GRAD0_opsz24.png" class="" alt=""></li>
         </ul>
-    <div class="hamburger-menu">
-        <div>
-            <h4>MENU</h4>
-        </div>
-        <div class="menu-list">
-            <ul>
-                <li>Mens</li>
-                <li>Womens</li>
-                <li>Rings</li>
-                <li>Launches</li>
-            </ul>
-        </div>
-        <div class="register">
-            <button class="loginbtn ">LOGIN / REGISTER</button>
-            <button class="loginbtn ">REWARDS</button>
-        </div>
-        <div class="hamburger-bottoms">
-            <ul>
-                <li>TERMS & CONDITIONS</li>
-                <li>PRIVACY POLICY</li>
-                <li>DELIVERY</li>
-                <li>RETURNS</li>
-                <li>FAQS</li>
-                <li>CONTACT</li>
-            </ul>
-        </div>
-    
-    </div>
-
-    </nav>
+        <label for="hamburger" class="c-hamburger-menu__button"><!-- 追記 ハンバーガーメニューのボタン -->
+          <span class="c-hamburger-menu__button-mark"></span>
+          <span class="c-hamburger-menu__button-mark"></span>
+          <span class="c-hamburger-menu__button-mark"></span>
+        </label>
+      </header>
+    </header>
 
     <section class="main">
 

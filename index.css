@@ -179,19 +179,6 @@
         display: none;
     }
 
-    .logo {
-        width: 30%;
-    }
-
-    .logo h2{
-        font-size: smaller;
-    }
-
-    .logo p{
-        font-size: smaller;
-    }
-
-
 }
 
 
@@ -501,10 +488,7 @@ input[type="checkbox"] {
     color: white;
 }
 
-label {
-    margin-left: 5px; /* ラベルの左側に余白を追加 */
-    order: 1; /* ラベルを右に配置 */
-}
+
 
 .check-container{
     display: flex;
