@@ -1,6 +1,5 @@
 
 .womens-container{
-    margin-top: 2em;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr;
@@ -10,7 +9,11 @@
 .women-img {
     width: 100%; /* グリッドの幅に合わせて画像を調整 */
     max-width: 100%; /* 画像の最大幅を100%に設定 */
-    filter: brightness(120%);
+    filter: brightness(80%);
+}
+
+.women-img2, .women-img3{
+    display: none;
 }
 
 .mens-text {
@@ -69,4 +72,49 @@
 .text-price p{
     font-family: 'Hind Siliguri', sans-serif;
     font-size: 0.9em;
+}
+
+@media (max-width:810px){
+    .clothes-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .womens-container {
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .women-img {
+        display: none;
+    }
+
+    .women-img2 {
+        display: block;
+        width: 100%;
+        filter: brightness(80%);
+    }
+}
+
+
+@media (max-width:450px){
+    .clothes-container{
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .womens-container {
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .women-img2 {
+        display: none;
+    }
+
+    .women-img3 {
+        display: block;
+        width: 100%;
+        filter: brightness(80%);
+    }
 }
