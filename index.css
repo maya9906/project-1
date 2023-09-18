@@ -5,7 +5,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* -------- nav-bar styling -------- */
+/* ---------------------- nav-bar styling ---------------------- */
 
 .nav-container{
     display: flex;
@@ -55,17 +55,16 @@
 }
 
 .nav-list li a {
-    text-decoration: none; /* デフォルトの下線を非表示にする */
-    color: black; /* 文字色 */
-    background-image: linear-gradient(90deg, #000000, #000000); /* 線の色 */
+    text-decoration: none; 
+    color: black; 
+    background-image: linear-gradient(90deg, #000000, #000000); 
     background-repeat: no-repeat;
-    background-position: left bottom; /* 線の起点を左・下に設定 */
-    background-size: 0 1.5px; /* 線の横幅を0、縦幅を1pxに */
-    transition: background-size 0.3s; /* 線を伸ばすアニメーション実行時間を指定 */
+    background-position: left bottom; 
+    background-size: 0 1.5px; 
+    transition: background-size 0.3s; 
 }
-
 .nav-list li a:hover{
-    background-size: 100% 1.5px; /* 線の横幅を100%にする */
+    background-size: 100% 1.5px; 
 }
 
 .icon-list{
@@ -81,20 +80,10 @@
     list-style: none;
 }
 
-/* hamburger */
-
-.hamburger {
-    display: none;
-}
-
-.hamburger-menu{
-    display: none;
-}
-
-/* main */
+/*------------------------ main-------------------------- */
 .mainImage {
-    text-align: center; /* 水平方向に中央揃え */
-    position: relative; /* 相対位置指定 */
+    text-align: center; 
+    position: relative; 
     overflow: hidden;
 }
 
@@ -123,16 +112,16 @@
 .explore-now {
     margin: 20px auto;
     color: white;
-    text-decoration: none; /* デフォルトの下線を非表示にする */
-    background-image: linear-gradient(90deg, #ffffff, #ffffff); /* 線の色 */
+    text-decoration: none; 
+    background-image: linear-gradient(90deg, #ffffff, #ffffff); 
     background-repeat: no-repeat;
-    background-position: left bottom; /* 線の起点を左・下に設定 */
-    background-size: 0 1.5px; /* 線の横幅を0、縦幅を1pxに */
-    transition: background-size 0.3s; /* 線を伸ばすアニメーション実行時間を指定 */
+    background-position: left bottom;
+    background-size: 0 1.5px; 
+    transition: background-size 0.3s; 
 }
 
 .explore-now:hover {
-    background-size: 100% 1.5px; /* 線の横幅を100%にする */
+    background-size: 100% 1.5px;
 }
 
 @media (max-width: 810px){
@@ -186,7 +175,7 @@
 }
 
 
-/* shoecontainer */
+/* ----------------------------- shoecontainer ---------------------------- */
 
 .shoes-container{
     margin-top: 1.5em;
@@ -205,11 +194,11 @@
 .shoe{
     width: 90%;
     margin: 0 auto;
-    transition: transform 0.3s ease; /* 拡大縮小のアニメーションを追加 */
+    transition: transform 0.3s ease; 
 }
 
 .shoe:hover{
-    transform: scale(0.95); /* ホバー時に画像を拡大表示 */
+    transform: scale(0.95);
 }
 
 .shoe-explain{
@@ -271,11 +260,11 @@
     }
 }
 
-/* second and third main part */
+/* ---------------------- second and third main part ------------------- */
 
 .second-main{
     margin-top: 1.5em;
-    position: relative; /* 相対位置指定 */
+    position: relative; 
     overflow: hidden;
 }
 
@@ -303,16 +292,16 @@
 .explore-now2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-    text-decoration: none; /* デフォルトの下線を非表示にする */
-    background-image: linear-gradient(90deg, #ffffff, #ffffff); /* 線の色 */
+    text-decoration: none; 
+    background-image: linear-gradient(90deg, #ffffff, #ffffff); 
     background-repeat: no-repeat;
-    background-position: left bottom; /* 線の起点を左・下に設定 */
-    background-size: 0 1.5px; /* 線の横幅を0、縦幅を1pxに */
-    transition: background-size 0.3s; /* 線を伸ばすアニメーション実行時間を指定 */
+    background-position: left bottom;
+    background-size: 0 1.5px; 
+    transition: background-size 0.3s; 
 }
 
 .explore-now2:hover {
-    background-size: 100% 1.5px; /* 線の横幅を100%にする */
+    background-size: 100% 1.5px; 
 }
 
 @media (max-width:810px){
@@ -338,7 +327,7 @@
     }
 
     .explore-now2:hover {
-        background-size: 100% 1px; /* 線の横幅を100%にする */
+        background-size: 100% 1px; 
     }
 }
 
@@ -357,7 +346,7 @@
     }
 
 }
-/* more feature pert */
+/* --------------------- more feature pert --------------------- */
 
 .more-features{
     padding: 2em;
@@ -423,7 +412,7 @@
     }
 }
 
-/* subscribe */
+/* ---------------------- subscribe ------------------------ */
 
 .subscribe {
     position: relative;
@@ -479,13 +468,13 @@
 .checkbox {
     display: flex;
     align-items: center;
-    margin-bottom: 10px; /* 各チェックボックスの下に余白を追加 */
+    margin-bottom: 10px;
     flex: 1;
 }
 
 input[type="checkbox"] {
-    margin-right: 5px; /* チェックボックスとラベルの間に余白を追加 */
-    flex-shrink: 0; /* チェックボックスが縮小しないように設定 */
+    margin-right: 5px; 
+    flex-shrink: 0; 
 }
 
 .checkbox label{
@@ -570,7 +559,7 @@ input[type="checkbox"] {
     }
 }
 
-/* footer */
+/* ----------------------- footer ---------------------- */
 
 .footer-container{
     display: flex;
