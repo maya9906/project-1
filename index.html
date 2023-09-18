@@ -12,7 +12,11 @@
     <link rel="stylesheet" href="humburger.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <!-- A div element with the class "nav-container" for containing the navigation bar -->
     <nav class="c-header c-hamburger-menu">
+        <!-- Navigation Bar is a Flex Container -->
+        <!-- It uses Flex properties for layout -->
         
         <input type="checkbox" name="hamburger" id="hamburger" class="c-hamburger-menu__input"/>
         <label for="hamburger" class="c-hamburger-menu__bg"></label>
@@ -45,27 +49,36 @@
         </label>
     </nav>
 
+    <!-- Main Section -->
     <section class="main">
 
         <div class="mainImage">
+            <!-- Main Section uses Flex properties for centering -->
             <img src="imgs/main.JPG" class="main-image" alt="main">
             <img src="imgs/shoe2.JPG" alt="" class="main-image2">
             <div class="main-p">
+                <!-- Main Section Content uses absolute positioning -->
                 <p>COUNTER CULTURE</p>
                 <h2>Timeless Styles Rediscoverd:</h2>
                 <h2>Uneath Your Vintage Identity</h2>
                 <a href="pages/explore.html" class="explore-now">Explore Now</a>
             </div>
         </div>
-
+        
+        <!-- Shoe Container -->
         <div class="shoes-container">
+            <!-- Shoe Container is a Grid Container -->
+            <!-- It uses CSS Grid for layout -->
             <div class="shoe1">
+                <!-- Each Shoe Section is a Flex Container -->
+                <!-- They use Flex properties for layout -->
                 <img src="imgs/shoe-1.webp" class="shoe" alt="shoes">
                 <div class="shoe-explain">
                     <p class="shoe-p">NOW ON LAUNCHES</p>
                     <h3>NIKE NOCTA GLIDE</h3>
                     <p class="shoe-p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem mollis aliquam ut porttitor leo a diam sollicitudin. </p>
                 </div>
+                <!-- (Other shoe elements are similar) -->
             </div>
             <div class="shoe1">
                 <img src="imgs/shoe-2.webp" class="shoe" alt="shoes">
@@ -104,20 +117,25 @@
                 <p><a href="#" class="explore-now2">Explore Now</a></p>
             </div>
         </div>
-
+        
+        <!-- Other Feature Sections -->
         <div class="more-features">
-            
+            <!-- More Features Section uses Flex properties for layout -->
+
             <h3>INFORMATION</h3>
             
 
             <div class="feature-container">
+                <!-- Feature Container is a Grid Container -->
+            <!-- It uses CSS Grid for layout -->
                 <div class="first-one">
+                    <!-- Each Feature uses Flex properties for layout -->
                     <img src="imgs/whatsgood.webp" class="feature-item" alt="">
                     <h4>WHATSGOOD?</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices dui sapien eget mi proin sed. Nulla facilisi cras fermentum odio eu feugiat pretium nibh ipsum.</p>
                     <p>Explore Now</p>
                 </div>
-
+                <!-- (Other feature contents are similar) -->
                 <div class="first-one">
                     <img src="imgs/whatsgood-women.webp" class="feature-item" alt="">
                     <h4>WHATSGOOD? WOMENS </h4>
@@ -142,15 +160,16 @@
 
             
         </div>
-
+        <!-- Subscribe Section -->
         <div class="subscribe">
-            
+            <!-- Subscribe Section uses Flex properties for layout -->
             <img src="imgs/subscribe.jpeg" class="subscribe-img" alt="skateboard coat">
             <img src="imgs/subscribe2.jpeg" class="subscribe2-img" alt="skateboard coat">
             <img src="imgs/subscribe3.jpeg" class="subscribe3-img" alt="skateboard coat">
             <img src="imgs/maco.JPG" class="subscribe4-img" alt="skateboard coat">
         
             <div class="subscribe-container">
+                <!-- Subscribe Container Content uses Flex properties for layout -->
                 <h3>Subscribe to the TOKYO VOGUE newsletter for exclusive products, new arrivals and sneaker launches</h3>
                 <label class="label" for="email">
                     <input id="email" class="input-text js-input" type="email" required placeholder="Enter your email">
@@ -205,9 +224,11 @@
     </section>
 
     <footer>
+        <!-- Footer Section -->
         <div class="footer-container">
             <div class="footer-left">
                 <div class="footer-logo">
+                    <!-- Footer Logo Section is a Flex Container -->
                     <h2>TOKYO VOGUE</h2>
                     <p>Your Urban Style Destination</p>
                 </div>
@@ -241,9 +262,11 @@
                 </div>
                 
             </div>
-
+            <!-- Mobile Footer Section -->
             <div class="mobile-footer">
+                <!-- Mobile Footer Section uses Flex properties for layout -->
                 <div class="footer-middle2">
+                    <!-- Mobile Footer Middle Section uses Flex properties for layout -->
                     
                     <h5 class="usefullinks">Useful Links</h5>
                     <ul class="links-container">
@@ -255,6 +278,7 @@
                     
                 </div>
                 <div class="footer-right2">
+                    <!-- Mobile Footer Right Section is a Flex Container -->
                     <h5>Follow Us</h5>
                     <div class="icons">
                         <img src="imgs/icons8-instagram-50.png" class="icon-items" alt="instagram icon">
