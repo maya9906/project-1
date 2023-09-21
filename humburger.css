@@ -16,7 +16,9 @@
   justify-content: space-between;
   padding: 1rem 2rem; 
   width: 100%;
-  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
 
 
@@ -52,7 +54,7 @@
 }
 
 .c-hamburger-menu {
-  position: relative;
+  /* position: relative; */
   z-index: 9999;
 }
 

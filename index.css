@@ -7,14 +7,6 @@
 
 /* ---------------------- nav-bar styling ---------------------- */
 
-.nav-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 1rem;
-    width: 100%;
-}
-
 .logo{
     display: flex;
     flex-direction: column;
@@ -45,7 +37,6 @@
     padding-left: none;
     gap: 15px;
     justify-content: center;
-    
 }
 
 .nav-list li{
