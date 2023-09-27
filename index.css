@@ -76,6 +76,7 @@
     text-align: center; 
     position: relative; 
     overflow: hidden;
+    display: none;
 }
 
 .main-image {
@@ -90,10 +91,15 @@
 
 .main-p {
     position: absolute;
-    top: 38%;
+    top: 40%;
     left: 3%;
     color: white;
 } 
+
+.main-p2 {
+    top: 60%;
+    left:50%;
+}
 
 .main-p h2{
     font-family: 'Roboto', sans-serif;
@@ -115,6 +121,32 @@
     background-size: 100% 1.5px;
 }
 
+.swiper {
+    width: 100%;
+    
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+  
+[class*="slide-image"] {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    position: relative;
+    top: 50%;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: rgb(196, 194, 194) !important;
+}
+.swiper-pagination-bullet-active {
+    background: gray !important;
+  }
 @media (max-width: 810px){
     .main-image{
         transform:scale( 1.2, 1.2);
@@ -131,11 +163,27 @@
     .explore-now{
         font-size: 0.8em;
     }
+
+    .main-p {
+        position: absolute;
+        top: 40%;
+        left: 5%;
+        color: white;
+    } 
+    
+    .main-p2 {
+        top: 60%;
+        left:50%;
+    }
 }
 
 @media (max-width: 450px){
-    .main-image{
-        display: none;
+    .swipe {
+        display: none !important;
+    }
+
+    .mainImage{
+        display: block;
     }
 
     .main-image2{

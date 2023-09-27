@@ -72,12 +72,12 @@
     top: 100%;
     width: 100%;
   }
-
-  #hamburger:checked ~ .c-hamburger-menu__list {
+  
+  /* this is with javascript */
+  .humburger-open {
     transform: translateX(0%);
     transition: 0.3s;
   }
-  
 }
 
 .c-hamburger-menu__input {

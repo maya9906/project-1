@@ -15,35 +15,37 @@
     </head>
     <body>
         <nav class="c-header c-hamburger-menu">
+            <!-- Navigation Bar is a Flex Container -->
+            <!-- It uses Flex properties for layout -->
             
-            <input type="checkbox" name="hamburger" id="hamburger" class="c-hamburger-menu__input">
+            <input type="checkbox" name="hamburger" id="hamburger" class="c-hamburger-menu__input" onchange="hamburgerOpen()">
             <label for="hamburger" class="c-hamburger-menu__bg"></label>
-            <ul class="c-header__list c-hamburger-menu__list">
-            <li class="c-header__list-item">
-            </li>
-            <li class="c-header__list-item">
+            <ul class="c-header__list c-hamburger-menu__list" id="menu-h">
+              <li class="c-header__list-item">
+              </li>
+              <li class="c-header__list-item">
                 <a href="../pages/mens.html" class="c-header__list-link">MENS</a>
-            </li>
-            <li class="c-header__list-item">
+              </li>
+              <li class="c-header__list-item">
                 <a href="../pages/womens.html" class="c-header__list-link">WOMENS</a>
-            </li>
-            <li class="c-header__list-item">
+              </li>
+              <li class="c-header__list-item">
                 <a href="../pages/explore.html" class="c-header__list-link">EXPLORE</a>
-            </li>
+              </li>
             </ul>
             <div class="logo">
                 <h2><a href="../index.html">TOKYO VOGUE</a></h2>
                 <p><a href="../index.html">Your Urban Style Destination</a></p>
             </div>
             <ul class="icon-list">
-                <li><img src="../imgs/person_FILL0_wght400_GRAD0_opsz24.png"  alt="user-icon"></li>
+                <li><img src="../imgs/person_FILL0_wght400_GRAD0_opsz24.png" alt="user-icon"></li>
                 <li><img src="../imgs/favorite_FILL0_wght400_GRAD0_opsz24.png" alt="heart-icon"></li>
                 <li><img src="../imgs/shopping_bag_FILL0_wght400_GRAD0_opsz24.png" alt="shopping-bag"></li>
             </ul>
             <label for="hamburger" class="c-hamburger-menu__button">
-            <span class="c-hamburger-menu__button-mark"></span>
-            <span class="c-hamburger-menu__button-mark"></span>
-            <span class="c-hamburger-menu__button-mark"></span>
+              <span class="c-hamburger-menu__button-mark"></span>
+              <span class="c-hamburger-menu__button-mark"></span>
+              <span class="c-hamburger-menu__button-mark"></span>
             </label>
         </nav>
         <!-- Main Section -->
@@ -180,28 +182,58 @@
             </div>
         </section>
         
-            <footer>
-                <div class="footer-container">
-                    <div class="footer-left">
-                        <div class="footer-logo">
-                            <h2>TOKYO VOGUE</h2>
-                            <p>Your Urban Style Destination</p>
-                        </div>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <h2>TOKYO VOGUE</h2>
+                        <p>Your Urban Style Destination</p>
+                    </div>
+                </div>
+                
+                <div class="footer-middle">
+                    <div>
+                        <h4 class="usefullinks">Useful Links</h4>
+                        <ul class="links-container">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../pages/mens.html"> Men's</a></li>
+                            <li><a href="../pages/womens.html">Women's</a></li>
+                            <li><a href="../pages/explore.html">Explore</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <h4>Follow Us</h4>
+                    <div class="icons">
+                        <img src="../imgs/icons8-instagram-50.png" class="icon-items" alt="instagram icon">
+                        <img src="../imgs/icons8-facebook-50.png" class="icon-items" alt="facebook icon">
+                        <img src="../imgs/icons8-twitter-circled-50.png" class="icon-items" alt="twitter-icon">
+                        <img src="../imgs/icons8-youtube-music-50.png" class="icon-items" alt="youtube-icon">
+                        <img src="../imgs/icons8-pinterest-50.png" class="icon-items" alt="pinterest-icon">
+                    </div>
+                    <h4>Payment Method</h4>
+                    <div class="icons">
+                        <img src="../imgs/icons8-mastercard-50.png" class="icon-items" alt="mastercard-icon">
+                        <img src="../imgs/icons8-visa-card-50.png" class="icon-items" alt="visacard-icon">
+                        <img src="../imgs/icons8-amex-50.png" class="icon-items" alt="amexcard-icon">
                     </div>
                     
-                    <div class="footer-middle">
-                        <div>
-                            <h4 class="usefullinks">Useful Links</h4>
-                            <ul class="links-container">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="pages/mens.html"> Men's</a></li>
-                                <li><a href="pages/womens.html">Women's</a></li>
-                                <li><a href="#">Launches</a></li>
-                            </ul>
-                        </div>
+                </div>
+    
+                <div class="mobile-footer">
+                    <div class="footer-middle2">
+                        
+                        <h5 class="usefullinks">Useful Links</h5>
+                        <ul class="links-container">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../pages/mens.html"> Men's</a></li>
+                            <li><a href="../pages/womens.html">Women's</a></li>
+                            <li><a href="../pages/explore.html">Explore</a></li>
+                        </ul>
+                        
                     </div>
-                    <div class="footer-right">
-                        <h4>Follow Us</h4>
+                    <div class="footer-right2">
+                        <h5>Follow Us</h5>
                         <div class="icons">
                             <img src="../imgs/icons8-instagram-50.png" class="icon-items" alt="instagram icon">
                             <img src="../imgs/icons8-facebook-50.png" class="icon-items" alt="facebook icon">
@@ -209,7 +241,7 @@
                             <img src="../imgs/icons8-youtube-music-50.png" class="icon-items" alt="youtube-icon">
                             <img src="../imgs/icons8-pinterest-50.png" class="icon-items" alt="pinterest-icon">
                         </div>
-                        <h4>Payment Method</h4>
+                        <h5>Payment Method</h5>
                         <div class="icons">
                             <img src="../imgs/icons8-mastercard-50.png" class="icon-items" alt="mastercard-icon">
                             <img src="../imgs/icons8-visa-card-50.png" class="icon-items" alt="visacard-icon">
@@ -217,40 +249,10 @@
                         </div>
                         
                     </div>
-        
-                    <div class="mobile-footer">
-                        <div class="footer-middle2">
-                            
-                            <h5 class="usefullinks">Useful Links</h5>
-                            <ul class="links-container">
-                                <li><a href="../index.html">Home</a></li>
-                                <li><a href="../pages/mens.html"> Men's</a></li>
-                                <li><a href="../pages/womens.html">Women's</a></li>
-                                <li><a href="../pages/explore.html">Explore</a></li>
-                            </ul>
-                            
-                        </div>
-                        <div class="footer-right2">
-                            <h5>Follow Us</h5>
-                            <div class="icons">
-                                <img src="../imgs/icons8-instagram-50.png" class="icon-items" alt="instagram icon">
-                                <img src="../imgs/icons8-facebook-50.png" class="icon-items" alt="facebook icon">
-                                <img src="../imgs/icons8-twitter-circled-50.png" class="icon-items" alt="twitter-icon">
-                                <img src="../imgs/icons8-youtube-music-50.png" class="icon-items" alt="youtube-icon">
-                                <img src="../imgs/icons8-pinterest-50.png" class="icon-items" alt="pinterest-icon">
-                            </div>
-                            <h5>Payment Method</h5>
-                            <div class="icons">
-                                <img src="../imgs/icons8-mastercard-50.png" class="icon-items" alt="mastercard-icon">
-                                <img src="../imgs/icons8-visa-card-50.png" class="icon-items" alt="visacard-icon">
-                                <img src="../imgs/icons8-amex-50.png" class="icon-items" alt="amexcard-icon">
-                            </div>
-                            
-                        </div>
-                    </div>
                 </div>
-                <p class="footer-bottom">Copyright @2023 TOKYO VOGUE.</p>
-            </footer>
-            
-        </body>
+            </div>
+            <p class="footer-bottom">Copyright @2023 TOKYO VOGUE.</p>
+        </footer>
+        <script src="../humburger.js"></script>
+    </body>
 </html>

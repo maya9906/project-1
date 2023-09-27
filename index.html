@@ -6,6 +6,7 @@
     <title>TOKYO VOGUE</title>
     <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@900&family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="index.css" >
     <link rel="stylesheet" href="humburger.css">
 </head>
@@ -16,9 +17,9 @@
         <!-- Navigation Bar is a Flex Container -->
         <!-- It uses Flex properties for layout -->
         
-        <input type="checkbox" name="hamburger" id="hamburger" class="c-hamburger-menu__input">
+        <input type="checkbox" name="hamburger" id="hamburger" class="c-hamburger-menu__input" onchange="hamburgerOpen()">
         <label for="hamburger" class="c-hamburger-menu__bg"></label>
-        <ul class="c-header__list c-hamburger-menu__list">
+        <ul class="c-header__list c-hamburger-menu__list" id="menu-h">
           <li class="c-header__list-item">
           </li>
           <li class="c-header__list-item">
@@ -52,7 +53,7 @@
 
         <div class="mainImage">
             <!-- Main Section uses Flex properties for centering -->
-            <img src="imgs/main.JPG" class="main-image" alt="main">
+            <!-- <img src="imgs/main.JPG" class="main-image" alt="main"> -->
             <img src="imgs/shoe2.JPG" alt="main-image-for-mobile" class="main-image2">
             <div class="main-p">
                 <!-- Main Section Content uses absolute positioning -->
@@ -61,6 +62,50 @@
                 <h2>Uneath Your Vintage Identity</h2>
                 <a href="pages/explore.html" class="explore-now">Explore Now</a>
             </div>
+        </div>
+        <div class="swiper swipe">
+
+            <div class="swiper-wrapper">
+    
+                <div class="swiper-slide">
+                    <img class="slide-image1" src="imgs/main.JPG" alt="a heineken bottle with a generic chatgpt text">
+                    <div class="main-p">
+                        <p>COUNTER CULTURE</p>
+                        <h2>Timeless Styles Rediscoverd:</h2>
+                        <h2>Uneath Your Vintage Identity</h2>
+                        <a href="pages/explore.html" class="explore-now">Explore Now</a>
+                    </div>
+                        
+                </div>
+                <div class="swiper-slide">
+                    <img class="slide-image2" src="imgs/main-4.JPG" alt="4 mugs of different coloured beer">
+                    <div class="main-p main-p2">
+                        <p>COUNTER CULTURE</p>
+                        <h2>Timeless Styles Rediscoverd:</h2>
+                        <h2>Uneath Your Vintage Identity</h2>
+                        <a href="pages/explore.html" class="explore-now">Explore Now</a>
+                    </div>
+                        
+                </div>
+                <div class="swiper-slide">
+                    <img class="slide-image3" src="imgs/main-3.JPG" alt="just beer">
+                    <div class="main-p">
+                        <p>COUNTER CULTURE</p>
+                        <h2>Timeless Styles Rediscoverd:</h2>
+                        <h2>Uneath Your Vintage Identity</h2>
+                        <a href="pages/explore.html" class="explore-now">Explore Now</a>
+                    </div>
+                        
+                </div>
+    
+            </div>
+    
+            <div class="swiper-pagination"></div>
+    
+            <div class="swiper-button-prev"></div>
+    
+            <div class="swiper-button-next"></div>
+    
         </div>
         
         <!-- Shoe Container -->
@@ -297,6 +342,8 @@
         </div>
         <p class="footer-bottom">Copyright @2023 TOKYO VOGUE.</p>
     </footer>
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="humburger.js"></script>
 </body>
 </html>
